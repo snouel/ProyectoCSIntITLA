@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA.csproj",
-      "projectName": "ProyectoCSIntITLA",
-      "projectPath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA.csproj",
+      "projectUniqueName": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\RestauranteDB.Domain.csproj",
+      "projectName": "RestauranteDB.Domain",
+      "projectPath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\RestauranteDB.Domain.csproj",
       "packagesPath": "C:\\Users\\steven.nouel\\.nuget\\packages\\",
       "outputPath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\obj\\",
       "projectStyle": "PackageReference",
