@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteDB.Domain", "ProyectoCSIntITLA\RestauranteDB.Domain.csproj", "{5DBD6046-BAE9-495B-8981-049B6E92B384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBBoletoBus.Domain", "ProyectoCSIntITLA\DBBoletoBus.Domain.csproj", "{5DBD6046-BAE9-495B-8981-049B6E92B384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteDB.Infraestructure", "RestauranteDB.Infraestructure\RestauranteDB.Infraestructure.csproj", "{BE992A0B-8CF4-43D4-BE9C-D427908E1A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBBoletoBus.Infraestructure", "RestauranteDB.Infraestructure\DBBoletoBus.Infraestructure.csproj", "{BE992A0B-8CF4-43D4-BE9C-D427908E1A8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

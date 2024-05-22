@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rhaeLAG1GyU/f/qx0xrIsf1LEzkiHqdqjveNHImYx4oxQV4M6sX+abUm5UxTQJN0YsAhNlxcrBqojzxAe8Arpg==",
+  "dgSpecHash": "88j7yCrxwHRZp/ppwBvQBs2mggTgJyDVTUWcTORKYJurMe3ICQArmJcqKDLf11WyL5/s/JAT9T8jnVaog5rpwA==",
   "success": true,
-  "projectFilePath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\RestauranteDB.Domain.csproj",
+  "projectFilePath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\DBBoletoBus.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
