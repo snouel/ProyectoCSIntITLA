@@ -1,7 +1,9 @@
 ﻿
-namespace DBBoletoBus.Domain.Entidades
+using DBBoletoBus.Domain.Core;
+
+namespace DBBoletoBus.Domain.Entities
 {
-    public sealed class Viaje
+    public sealed class Viaje : AuditableEntity
     {
         public int IdViaje { get; set; }
         public int IdBus { get; set; }
@@ -15,8 +17,6 @@ namespace DBBoletoBus.Domain.Entidades
         public int AsientosReservados { get; set; }
         public int AsientoDisponibles { get; set; } // TotalAsientos - AsientosReservados
         public bool Completo { get; set; } // TotalAsientos - AsientosReservados < 1
-        public DateTime FechaCreacion { get; set; }
-
         public Bus Bus { get; set; }
         public Ruta Ruta { get; set; }
         public ICollection<Reserva> Reservas { get; set; }
