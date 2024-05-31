@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DBBoletoBus.Infraestructure.Repository
 {
-    public class AsientoRepository : IAsiento
+    public class AsientoRepository : IAsientoRepository
     {
         private readonly BoletoBusContext DBBoletoBus;
 
