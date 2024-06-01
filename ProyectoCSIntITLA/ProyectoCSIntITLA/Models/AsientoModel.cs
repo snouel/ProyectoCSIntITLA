@@ -3,7 +3,7 @@ using DBBoletoBus.Domain.Entities;
 
 namespace DBBoletoBus.Domain.Models
 {
-    public class AsietoModel
+    public class AsientoModel
     {
         public int IdAsiento { get; set; }
         public int IdBus { get; set; }

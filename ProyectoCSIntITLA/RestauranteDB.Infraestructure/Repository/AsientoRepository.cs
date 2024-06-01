@@ -1,40 +1,20 @@
 ﻿using DBBoletoBus.Domain.Entities;
 using DBBoletoBus.Domain.Interfaces;
+using DBBoletoBus.Domain.Models;
 using DBBoletoBus.Infraestructure.Context;
-using Microsoft.EntityFrameworkCore;
+using DBBoletoBus.Infraestructure.Core;
 
 namespace DBBoletoBus.Infraestructure.Repository
 {
-    public class AsientoRepository : IAsientoRepository
+    public class AsientoRepository : BaseRepository<Asiento>, IAsientoRepository
     {
-        private readonly BoletoBusContext DBBoletoBus;
-
-        public AsientoRepository(BoletoBusContext boletoBus)
+        private readonly BoletoBusContext context;
+        public AsientoRepository(BoletoBusContext context) : base(context)
         {
-             
-        }
-        public Task<Asiento> Get(int idAsiento)
-        {
-            throw new NotImplementedException();
-
+            this.context = context;
         }
 
-        public Task<List<Asiento>> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Save(Asiento asiento)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Save(List<Asiento> asientos)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(Asiento asiento)
+        public List<AsientoModel> GetAsientos()
         {
             throw new NotImplementedException();
         }
