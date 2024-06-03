@@ -1,8 +1,7 @@
-﻿using DBBoletoBus.Domain.Core;
-
-namespace DBBoletoBus.Domain.Entities
+﻿
+namespace DBBoletoBus.Domain.Models
 {
-    public sealed class Reserva : AuditableEntity    
+    public class ReservaModel
     {
         public int IdReserva { get; set; }
         public int IdViaje { get; set; }
@@ -11,6 +10,6 @@ namespace DBBoletoBus.Domain.Entities
         public decimal MontoTotal { get; set; }
         public Viaje Viaje { get; set; }
         public Usuario Pasajero { get; set; }
-        public ICollection<ReservaDetalle> ReservaDetalles { get; set; }
+        public ICollection<ReservaDetalleModel> ReservaDetalles { get; set; }
     }
 }

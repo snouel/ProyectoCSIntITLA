@@ -9,5 +9,6 @@ namespace DBBoletoBus.Domain.Interfaces
     public interface IAsientoRepository : IBaseRepository<Asiento>
     {
        List<AsientoModel> GetAsientos();
+       List<AsientoModel> GetAsientosByBus(int busId);
     }
 }

@@ -18,5 +18,10 @@ namespace DBBoletoBus.Infraestructure.Repository
         {
             throw new NotImplementedException();
         }
+
+        public List<AsientoModel> GetAsientosByBus(int busId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
