@@ -3,7 +3,7 @@ using DBBoletoBus.Domain.Core;
 
 namespace DBBoletoBus.Domain.Entities
 {
-    public sealed class Viaje : AuditableEntity
+    public class Viaje : AuditableEntity
     {
         public int IdViaje { get; set; }
         public int IdBus { get; set; }

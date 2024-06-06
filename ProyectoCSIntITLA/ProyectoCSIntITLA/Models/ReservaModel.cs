@@ -1,4 +1,6 @@
 ﻿
+using DBBoletoBus.Domain.Entities;
+
 namespace DBBoletoBus.Domain.Models
 {
     public class ReservaModel
@@ -8,8 +10,8 @@ namespace DBBoletoBus.Domain.Models
         public int IdPasajero { get; set; }
         public int AsientosReservados { get; set; }
         public decimal MontoTotal { get; set; }
-        public Viaje Viaje { get; set; }
-        public Usuario Pasajero { get; set; }
+        public ViajeModel Viaje { get; set; }
+        public UsuarioModel Pasajero { get; set; }
         public ICollection<ReservaDetalleModel> ReservaDetalles { get; set; }
     }
 }
