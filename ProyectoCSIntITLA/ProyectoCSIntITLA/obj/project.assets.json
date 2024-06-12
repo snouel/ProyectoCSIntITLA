@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\DBBoletoBus.Domain.csproj",
-      "projectName": "DBBoletoBus.Domain",
-      "projectPath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\DBBoletoBus.Domain.csproj",
+      "projectUniqueName": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\BoletoBus.Domain.csproj",
+      "projectName": "BoletoBus.Domain",
+      "projectPath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\BoletoBus.Domain.csproj",
       "packagesPath": "C:\\Users\\Steven\\.nuget\\packages\\",
       "outputPath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\obj\\",
       "projectStyle": "PackageReference",

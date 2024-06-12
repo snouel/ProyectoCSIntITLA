@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProyectoCSIntITLA\DBBoletoBus.Domain.csproj" />
+    <ProjectReference Include="..\ProyectoCSIntITLA\BoletoBus.Domain.csproj" />
   </ItemGroup>
 
 </Project>

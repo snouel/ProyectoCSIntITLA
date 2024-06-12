@@ -48,7 +48,7 @@ namespace DBBoletoBus.Infraestructure.Repository
         {
             var asientos = (from a in this.context.Asiento
                             join b in this.context.Bus on a.IdBus equals b.IdBus
-                            where a.IdBus == busId
+                            where a.Deleted == false && a.IdBus == busId
                             select new AsientoModel
                             {
                                 NumeroAsiento = a.NumeroAsiento,
@@ -73,5 +73,6 @@ namespace DBBoletoBus.Infraestructure.Repository
 
             return asientos;
         }
+
     }
 }

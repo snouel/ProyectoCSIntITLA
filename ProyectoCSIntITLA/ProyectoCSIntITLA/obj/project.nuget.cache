@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "88j7yCrxwHRZp/ppwBvQBs2mggTgJyDVTUWcTORKYJurMe3ICQArmJcqKDLf11WyL5/s/JAT9T8jnVaog5rpwA==",
+  "dgSpecHash": "SC3lHtdmMrWsD3MifgR4AgU6/dxLSkVPscX4sE3ZKX83P6qhjYAAv5iA765/pbHKC8zxkNJsrVO9KJmtQxIeXQ==",
   "success": true,
-  "projectFilePath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\DBBoletoBus.Domain.csproj",
+  "projectFilePath": "C:\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\ProyectoCSIntITLA\\BoletoBus.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
