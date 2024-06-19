@@ -1,4 +1,5 @@
-﻿using DBBoletoBus.Domain.Interfaces;
+﻿using BoletoBus.Domain.Interfaces;
+using BoletoBus.Infraestructure.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -21,10 +22,24 @@ namespace BoletoBus.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var asiento = await this.asientoRepository.GetAll(cd => !cd.Deleted);
+            var asiento = await this.asientoRepository.GetAll(cd => !cd.Eliminado);
 
             return Ok(asiento);
 
+        }
+
+        [HttpGet("testconnection")]
+        public IActionResult TestConnection()
+        {
+            try
+            {
+                asientoRepository.TestConnection();
+                return Ok("Connection successful!");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Connection failed: {ex.Message}");
+            }
         }
 
         // GET api/<AsientoController>/5

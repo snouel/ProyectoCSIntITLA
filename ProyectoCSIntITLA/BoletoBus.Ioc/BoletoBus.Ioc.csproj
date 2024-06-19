@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProyectoCSIntITLA\BoletoBus.Domain.csproj" />
-    <ProjectReference Include="..\RestauranteDB.Infraestructure\BoletoBus.Infraestructure.csproj" />
+    <ProjectReference Include="..\BoletoBus.Infraestructure\BoletoBus.Infraestructure.csproj" />
   </ItemGroup>
 
 </Project>
