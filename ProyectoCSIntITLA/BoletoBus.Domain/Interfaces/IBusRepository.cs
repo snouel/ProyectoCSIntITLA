@@ -7,7 +7,7 @@ namespace BoletoBus.Domain.Interfaces
     public interface IBusRepository : IBaseRepository<Bus>
     {
         List<BusModel> GetBus();
-        List<BusModel> GetBusByIdAsync();
+        Task<Bus> GetBusByIdAsync(int id);
 
 
 

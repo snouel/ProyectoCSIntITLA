@@ -2,13 +2,17 @@
 using BoletoBus.Domain.Entities;
 using BoletoBus.Domain.Interfaces;
 using BoletoBus.Domain.Models;
+using BoletoBus.Infraestructure.Context;
 using System.Linq.Expressions;
 
 namespace BoletoBus.Infraestructure.Repository.Mock
 {
     public class AsientoMockRep : IAsientoRepository
     {
+
+
         private List<Asiento> asientos;
+
 
         public AsientoMockRep()
         {

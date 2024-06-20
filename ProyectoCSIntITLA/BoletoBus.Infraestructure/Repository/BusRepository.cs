@@ -1,11 +1,9 @@
-﻿using BoletoBus.Domain.Core;
-using BoletoBus.Domain.Entities;
+﻿using BoletoBus.Domain.Entities;
 using BoletoBus.Domain.Interfaces;
 using BoletoBus.Domain.Models;
 using BoletoBus.Infraestructure.Context;
 using BoletoBus.Infraestructure.Core;
 using BoletoBus.Infraestructure.Exceptions;
-using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 
@@ -99,10 +97,32 @@ namespace BoletoBus.Infraestructure.Repository
             return buses;
         }
 
+        //public List<BusModel> GetBus()
+        //{
+        //    var bus = context.Bus.Select(cd => new BusModel()
+        //    {
+        //        IdBus = cd.IdBus,
+        //        NumeroPlaca = cd.NumeroPlaca,
+        //        Nombre = cd.Nombre,
+        //        Disponible = cd.Disponible,
+        //    }).ToList();
 
-        public List<BusModel> GetBusByIdAsync()
+
+
+        //    return bus;
+        //}
+
+
+
+        public async Task<Bus> GetBusByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var bus = await context.Bus.FindAsync(id);
+
+            if (bus == null)
+            {
+                throw new KeyNotFoundException($"Asiento with ID {id} not found.");
+            }
+            return bus;
         }
     }
 }
