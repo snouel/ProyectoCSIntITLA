@@ -21,35 +21,35 @@ namespace BoletoBus.Infraestructure.Core
             return await _entities.AnyAsync(filter);
         }
 
-        public async Task<TEntity> Get(int Id)
+        public virtual async Task<TEntity> Get(int Id)
         {
             return await _entities.FindAsync(Id);
         }
 
-        public async Task<List<TEntity>> GetAll(Expression<Func<TEntity, bool>> filter)
+        public virtual async Task<List<TEntity>> GetAll(Expression<Func<TEntity, bool>> filter)
         {
             return await _entities.Where(filter).ToListAsync();
         }
 
-        public async Task Save(TEntity entity)
+        public virtual async Task Save(TEntity entity)
         {
             _entities.Add(entity);
             await context.SaveChangesAsync();
         }
 
-        public async Task Save(List<TEntity> entities)
+        public virtual async Task Save(List<TEntity> entities)
         {
             _entities.AddRange(entities);
             await context.SaveChangesAsync();
         }
 
-        public async Task Update(TEntity entity)
+        public virtual async Task Update(TEntity entity)
         {
             _entities.Update(entity);
             await context.SaveChangesAsync();
         }
 
-        public async Task Update(List<TEntity> entities)
+        public virtual async Task Update(List<TEntity> entities)
         {
             _entities.UpdateRange(entities);
             await context.SaveChangesAsync();

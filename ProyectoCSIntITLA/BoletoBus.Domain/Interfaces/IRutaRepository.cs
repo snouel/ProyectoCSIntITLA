@@ -5,6 +5,6 @@ namespace BoletoBus.Domain.Interfaces
 {
     public interface IRutaRepository : IBaseRepository<Ruta>
     {
-
+        List<Ruta> GetRuta();
     }
 }

@@ -5,6 +5,6 @@ namespace BoletoBus.Domain.Interfaces
 {
     public interface IViajeRepository : IBaseRepository<Viaje>
     {
-
+        List<Viaje> GetViaje();
     }
 }

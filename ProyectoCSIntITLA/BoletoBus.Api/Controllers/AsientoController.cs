@@ -1,4 +1,6 @@
-﻿using BoletoBus.Domain.Interfaces;
+﻿using BoletoBus.Api.Model;
+using BoletoBus.Api.Model.AsientoModel.AsientoModel;
+using BoletoBus.Domain.Interfaces;
 using BoletoBus.Infraestructure.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,28 +21,26 @@ namespace BoletoBus.Api.Controllers
 
       
         // GET: api/<AsientoController>
-        [HttpGet]
+        [HttpGet("GetAsientos")]
         public async Task<IActionResult> Get()
         {
-            var asiento = await this.asientoRepository.GetAll(cd => !cd.Eliminado);
+            var asiento =  this.asientoRepository.GetAsientos();
 
             return Ok(asiento);
 
         }
 
-        [HttpGet("testconnection")]
-        public IActionResult TestConnection()
+        // GET: api/<AsientoController>
+        [HttpGet("GetAsientosYBuses")]
+        public async Task<IActionResult> GetAsientosYBuses()
         {
-            try
-            {
-                asientoRepository.TestConnection();
-                return Ok("Connection successful!");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Connection failed: {ex.Message}");
-            }
+            var asientoAndBuses = this.asientoRepository.GetAsientosYBuses();
+
+            return Ok(asientoAndBuses);
+
         }
+
+
 
         // GET api/<AsientoController>/5
         [HttpGet("{id}")]
@@ -51,8 +51,10 @@ namespace BoletoBus.Api.Controllers
 
         // POST api/<AsientoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] AsientoAddModel asientoAddModel)
         {
+            var asiento = asientoAddModel.ConvertToEntityAsiento();
+            this.asientoRepository.Save(asiento);
         }
 
         // PUT api/<AsientoController>/5

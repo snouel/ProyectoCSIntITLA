@@ -9,6 +9,6 @@ namespace BoletoBus.Ioc.Dependencies
         {
             services.AddScoped<IAsientoRepository, AsientoRepository>();
 
-            }
+        }
     }
 }

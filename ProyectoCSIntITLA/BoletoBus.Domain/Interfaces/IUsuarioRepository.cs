@@ -7,6 +7,6 @@ namespace BoletoBus.Domain.Interfaces
 {
     public interface IUsuarioRepository : IBaseRepository<Usuario>
     {
-
+        List<Usuario> GetUsuario();
     }
 }

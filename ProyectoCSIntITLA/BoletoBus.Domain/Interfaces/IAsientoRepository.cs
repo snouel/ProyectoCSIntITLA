@@ -7,8 +7,11 @@ namespace BoletoBus.Domain.Interfaces
     public interface IAsientoRepository : IBaseRepository<Asiento>
     {
         List<AsientoModel> GetAsientos();
-        List<AsientoModel> GetAsientosByBus(int busId);
+        List<AsientoModel> GetAsientosYBuses();
+        List<AsientoModel> GetAsientosByBusID(int busId);
+        Task<Asiento> GetAsientoByIdAsync(int id);
 
-        void TestConnection();
+
+
     }
 }

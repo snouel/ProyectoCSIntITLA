@@ -10,6 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BusTicketContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BusTicketContext")));
 
 builder.Services.AddAsientoDependency();
+builder.Services.AddBusDependency();
+builder.Services.AddReservaDependency();
+builder.Services.AddReservaDetalleDependency();
+builder.Services.AddRutaDependency();
+builder.Services.AddUsuarioDependency();
+builder.Services.AddViajeDependency();
+
+
 
 
 builder.Services.AddControllers();
