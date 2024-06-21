@@ -9,6 +9,9 @@ namespace BoletoBus.Api.Model.AsientoModel.AsientoModel
         public int IdBus { get; set; }
         public int NumeroPiso { get; set; }
         public int NumeroAsiento { get; set; }
+        public string CreacionUsuario { get; set; }
+
+        public DateTime FechaCreacion { get; set; }
 
         public Asiento ConvertToEntityAsiento()
         {
@@ -18,7 +21,8 @@ namespace BoletoBus.Api.Model.AsientoModel.AsientoModel
                 IdBus = this.IdBus,
                 NumeroPiso = this.NumeroPiso,
                 NumeroAsiento = this.NumeroAsiento,
-                FechaCreacion = DateTime.Now
+                FechaCreacion = DateTime.Now,
+                CreacionUsuario = this.CreacionUsuario
             };
         }
     }

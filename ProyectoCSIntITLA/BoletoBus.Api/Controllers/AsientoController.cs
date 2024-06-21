@@ -40,8 +40,6 @@ namespace BoletoBus.Api.Controllers
 
         }
 
-
-
         // GET api/<AsientoController>/5
         [HttpGet("{id}")]
         public string Get(int id)

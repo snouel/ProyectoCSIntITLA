@@ -29,8 +29,6 @@ namespace BoletoBus.Infraestructure.Repository
                 NumeroAsiento = cd.NumeroAsiento
             }).ToList();
 
-
-
             return asientos;
         }
 
